@@ -3,12 +3,14 @@ Swipe
 
 移动端专用轮播组件，支持滑动切换
 改编自https://github.com/thebird/Swipe
-添加了点击缩略索引可以切换至对应模块功能
+，添加了点击缩略索引可以切换至对应模块功能
 
 Usage
+=====
 
 Swipe only needs to follow a simple pattern. Here is an example:
 
+```Html
 <div id='slider' class='swipe'>
   <div class='swipe-wrap'>
     <div></div>
@@ -16,9 +18,14 @@ Swipe only needs to follow a simple pattern. Here is an example:
     <div></div>
   </div>
 </div>
+```
+
 Above is the initial required structure– a series of elements wrapped in two containers. Place any content you want within the items. The containing div will need to be passed to the Swipe function like so:
 
+```Javascript
 window.mySwipe = Swipe(document.getElementById('slider'));
+```
+
 I always place this at the bottom of the page, externally, to verify the page is ready.
 
 Also Swipe needs just a few styles added to your stylesheet:
