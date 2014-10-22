@@ -3,6 +3,7 @@ Swipe
 
 移动端专用轮播组件，支持滑动切换
 改编自https://github.com/thebird/Swipe
+添加了点击缩略索引可以切换至对应模块功能
 
 Usage
 
