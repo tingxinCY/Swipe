@@ -30,6 +30,7 @@ I always place this at the bottom of the page, externally, to verify the page is
 
 Also Swipe needs just a few styles added to your stylesheet:
 
+```Css
 .swipe {
   overflow: hidden;
   visibility: hidden;
@@ -44,28 +45,32 @@ Also Swipe needs just a few styles added to your stylesheet:
   width:100%;
   position: relative;
 }
+```
+
 Config Options
+=====
 
 Swipe can take an optional second parameter– an object of key/value settings:
 
-startSlide Integer (default:0) - index position Swipe should start at
+* startSlide Integer (default:0) - index position Swipe should start at
 
-speed Integer (default:300) - speed of prev and next transitions in milliseconds.
+* speed Integer (default:300) - speed of prev and next transitions in milliseconds.
 
-auto Integer - begin with auto slideshow (time in milliseconds between slides)
+* auto Integer - begin with auto slideshow (time in milliseconds between slides)
 
-continuous Boolean (default:true) - create an infinite feel with no endpoints
+* continuous Boolean (default:true) - create an infinite feel with no endpoints
 
-disableScroll Boolean (default:false) - stop any touches on this container from scrolling the page
+* disableScroll Boolean (default:false) - stop any touches on this container from scrolling the page
 
-stopPropagation Boolean (default:false) - stop event propagation
+* stopPropagation Boolean (default:false) - stop event propagation
 
-callback Function - runs at slide change.
+* callback Function - runs at slide change.
 
-transitionEnd Function - runs at the end slide transition.
+* transitionEnd Function - runs at the end slide transition.
 
-Example
+###Example
 
+```Javascript
 window.mySwipe = new Swipe(document.getElementById('slider'), {
   startSlide: 2,
   speed: 400,
@@ -76,17 +81,19 @@ window.mySwipe = new Swipe(document.getElementById('slider'), {
   callback: function(index, elem) {},
   transitionEnd: function(index, elem) {}
 });
+```
 
 Swipe API
+=====
 
 Swipe exposes a few functions that can be useful for script control of your slider.
 
-prev() slide to prev
+`prev()` slide to prev
 
-next() slide to next
+`next()` slide to next
 
-getPos() returns current slide index position
+`getPos()` returns current slide index position
 
-getNumSlides() returns the total amount of slides
+`getNumSlides()` returns the total amount of slides
 
-slide(index, duration) slide to set index position (duration: speed of transition in milliseconds)
+`slide(index, duration)` slide to set index position (duration: speed of transition in milliseconds)
