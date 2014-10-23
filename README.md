@@ -3,7 +3,7 @@ Swipe
 
 移动端专用轮播组件，支持滑动切换
 改编自https://github.com/thebird/Swipe
-，添加了点击缩略索引可以切换至对应模块功能
+，添加了点击页签可以切换至对应tab页功能
 
 Usage
 =====
@@ -67,6 +67,8 @@ Swipe can take an optional second parameter– an object of key/value settings:
 * callback Function - runs at slide change.
 
 * transitionEnd Function - runs at the end slide transition.
+
+* pagination Boolean (default: true) - touch paginations can switch to the matching tab 
 
 ###Example
 
