@@ -12,10 +12,15 @@ Swipe only needs to follow a simple pattern. Here is an example:
 
 ```Html
 <div id='slider' class='swipe'>
-  <div class='swipe-wrap'>
-    <div></div>
-    <div></div>
-    <div></div>
+  <div class="swipe-wrap">
+    <div><!-- anything --></div>
+    <div><!-- anything --></div>
+    <div><!-- anything --></div>
+  </div>
+  <div class="swipe-pagination">
+    <div><!-- anything --></div>
+    <div><!-- anything --></div>
+    <div><!-- anything --></div>
   </div>
 </div>
 ```
@@ -44,6 +49,9 @@ Also Swipe needs just a few styles added to your stylesheet:
   float:left;
   width:100%;
   position: relative;
+}
+.swipe-pagination {
+  /* anything */
 }
 ```
 
